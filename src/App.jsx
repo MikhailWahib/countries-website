@@ -4,7 +4,6 @@ import Form from './components/Form'
 import Card from './components/Card'
 import Details from './components/Details'
 import useFetch from './useFetch'
-import './App.css'
 
 function App() {
 
