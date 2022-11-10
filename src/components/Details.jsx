@@ -32,7 +32,7 @@ export default function Details({ setShowCard, countries, currentDetails, setCur
                 <ArrowBackIosIcon className='text-xs'/><span>Back</span>
             </button>
             <div className="flex flex-col lg:flex-row lg:gap-44">
-                <img src={data.flag} alt={data.name} className='my-8 rounded lg:w-[50%]'/>
+                <img src={data.flag} alt={data.name} className='my-8 rounded lg:w-[50%] drop-shadow-lg'/>
                 <div className="lg:flex lg:flex-col lg:my-auto"> 
                     <div>
                         <h2 className='text-2xl font-bold my-5'>{data.name}</h2>
