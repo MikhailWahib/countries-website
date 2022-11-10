@@ -24,7 +24,6 @@ function App() {
     } else {
       setUrl('https://restcountries.com/v2/all')
     }
-    console.log(currentDetails);
   }
 
   useEffect(() => {
