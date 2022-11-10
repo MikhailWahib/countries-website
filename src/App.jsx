@@ -13,7 +13,7 @@ function App() {
   const [region, setRegion] = useState('')
   const [showCard, setShowCard] = useState(false)
   const [currentDetails, setCurrentDetails] = useState('')
-  const [darkMode, setDarkMode] = useState(true)
+  const [darkMode, setDarkMode] = useState(false)
   
   
   const fetchData = () => {
