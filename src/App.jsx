@@ -24,6 +24,7 @@ function App() {
     } else {
       setUrl('https://restcountries.com/v2/all')
     }
+    console.log(currentDetails);
   }
 
   useEffect(() => {
@@ -41,8 +42,11 @@ function App() {
           setDarkMode={setDarkMode}
         />
         {showCard && <Details
+          showCard={showCard}
           setShowCard={setShowCard}
           currentDetails={currentDetails}
+          setCurrentDetails={setCurrentDetails}
+          countries={countries}
         />}
         <section className='w-auto mx-auto flex justify-center flex-col'>
           <Form
