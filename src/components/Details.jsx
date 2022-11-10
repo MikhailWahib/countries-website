@@ -55,14 +55,6 @@ export default function Details({ setShowCard, countries, currentDetails, setCur
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h3 className='text-xl font-bold mb-4'>Border Countries:</h3>
-                        <div className='flex gap-x-3 flex-wrap'>
-                            <span className='bg-white dark:bg-[#2b3945] drop-shadow-lg mt-2 px-7 py-1 opacity-70 rounded text-xs'>none</span>
-                            <span className='bg-white dark:bg-[#2b3945] drop-shadow-lg mt-2 px-7 py-1 opacity-70 rounded text-xs'>none</span>
-                            <span className='bg-white dark:bg-[#2b3945] drop-shadow-lg mt-2 px-7 py-1 opacity-70 rounded text-xs'>none</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
