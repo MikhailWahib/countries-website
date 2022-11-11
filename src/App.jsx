@@ -3,6 +3,7 @@ import NavBar from './components/NavBar'
 import Form from './components/Form'
 import Card from './components/Card'
 import Details from './components/Details'
+import LoadingPage from './components/LoadingPage'
 import useFetch from './useFetch'
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
     fetchData()
   }, [searchInput, region])
   
-  const [countries] = useFetch(url)
+  const [countries, loading] = useFetch(url)
 
 
   return (
@@ -55,7 +56,8 @@ function App() {
             setRegion={setRegion}
           />
           <div className='w-full  px-10 grid gap-x-20 lg:gap-x-16 md:gap-x-10 place-items-center lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2'>
-              { countries.message ? <h1 className='text-xl font-semibold text-center dark:text-white'>Not Found</h1> :
+              { loading ? <LoadingPage /> :
+                countries.message ? <h1 className='text-xl font-semibold text-center dark:text-white'>Not Found</h1> :
                 countries.map(country => {
                   return <Card
                     key={country.name}
