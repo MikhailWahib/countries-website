@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className={`App ${darkMode && 'dark'}`}>
-      <div className="h-screen w-screen bg-[#fafafa] dark:bg-[#202c37] overflow-x-hidden transition ease delay-60">
+      <div className="h-screen w-screen bg-[#fafafa] dark:bg-[#202c37] overflow-x-hidden">
         <NavBar
           darkMode={darkMode}
           setDarkMode={setDarkMode}
